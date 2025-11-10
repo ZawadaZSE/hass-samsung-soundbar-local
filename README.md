@@ -1,7 +1,7 @@
 # Samsung Soundbar **Local** – Home Assistant Integration
 
 > **Local IP control for 2024-line Samsung Wi-Fi soundbars**  
-> HW-Q990D · HW-Q930D · HW-Q800D · HW-QS730D · HW-S800D · HW-S801D · HW-S700D · HW-S60D · HW-S61D · HW-LS60D
+> HW-Q990D · HW-Q800D · HW-QS730D · HW-S800D · HW-S801D · HW-S700D · HW-S60D · HW-S61D · HW-LS60D
 
 ---
 
@@ -26,7 +26,7 @@ The entity is exposed as `media_player.soundbar_<ipaddr>` and works with dashboa
 
 ## Supported models
 
-* HW-Q990D  – HW-Q930D  – HW-Q800D  – HW-QS730D  
+* HW-Q990D  – HW-Q800D  – HW-QS730D  
 * HW-S800D  – HW-S801D  – HW-S700D  – HW-S60D  – HW-S61D  – HW-LS60D
 
 > Older (2023 and below) bars do **not** implement the same API and will **not** work.
