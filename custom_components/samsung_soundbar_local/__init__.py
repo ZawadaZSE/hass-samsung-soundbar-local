@@ -19,6 +19,7 @@ from homeassistant.helpers.update_coordinator import (
 from .const import (
     CONF_VERIFY_SSL,
     DEFAULT_POLL_INTERVAL,
+    DEFAULT_PORT,
     DOMAIN,
     PLATFORMS,
 )
@@ -37,6 +38,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     soundbar = AsyncSoundbar(
         host=entry.data[CONF_HOST],
         session=session,
+        port=entry.data.get("port", DEFAULT_PORT),
         verify_ssl=entry.data.get(CONF_VERIFY_SSL, False),
     )
 
